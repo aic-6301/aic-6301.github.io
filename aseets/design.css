@@ -104,7 +104,7 @@ img.siteicon {
     margin-top: auto;
     margin-bottom: auto;
 }
-h1.title {
+header h1.title {
     margin: 0;
     font-size: 20px;
     display: flex;
