@@ -229,3 +229,40 @@ body {
     text-align: center;
     display: block;
 }
+.content {
+    width: 80%;
+    margin: auto;
+}
+.profile-box {
+    width: 30%;
+    box-shadow: var(--shadow);
+    border: var(--border);
+    border-radius: 8px;
+    background: var(--border-color);
+}
+.profile-box h2 {
+    background: var(--background-primary);
+    color: var(--main-text);
+    padding: 13px;
+    border-radius: 8px 8px 0 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 0;
+    border-bottom: 3px solid var(--accent);
+}
+.profile-box p {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    padding-left: 1em;
+}
+.profile-content {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
