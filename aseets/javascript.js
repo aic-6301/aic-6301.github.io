@@ -6,7 +6,9 @@ $('#headers').load("/head.html?"+new Date().getTime());
 
 function nav_close() {
   $('nav.nav').fadeOut(400);
+  $('.nav-close').fadeOut(400);
 }
 function nav_open() {
   $('nav.nav').fadeIn(400);
+  $('.nav-close').fadeIn(400);
 }

@@ -184,9 +184,6 @@ body {
         justify-content: left;
     }
     .nav-close {
-        display: block;
-    }
-    .nav-close {
         background: var(--background-primary);
         border: var(--border);
         border-radius: 50%;
