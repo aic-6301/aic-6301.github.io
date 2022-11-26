@@ -76,19 +76,26 @@
     filter: contrast(0.8);
   }
   }
+  html {
+    background: var(--site-background);
+  }
+  p,i,span,li,h1,h2,h3,h4,h5,h6,a,label,figcaption,div { 
+    color: var(--main-text);
+  }
 header {
     width: 100%;
-    background: #dddd;
+    background: rgba(var(--background-secondary-rgb),0.6);
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
-    border-bottom: 1px solid #aaa;
+    border-bottom: var(--border);
     position: sticky;
     top: 0;
     z-index: 30;
     padding-top: 8px;
     padding-bottom: 8px;
     overflow: hidden;
+    backdrop-filter: blur(8px);
 }
 img.siteicon {
     width: 50px;
