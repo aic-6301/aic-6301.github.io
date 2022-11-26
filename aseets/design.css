@@ -124,7 +124,6 @@ span.sitetitle {
 }
 nav.nav {
     margin-left: auto;
-    margin-right: 50px;
     height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
@@ -145,4 +144,22 @@ body {
     height: fit-content;
     box-sizing: border-box;
     line-height: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#headers .title a {
+    display: flex;
+}
+.menu-item:hover {
+    background: var(--border-color);
+    color: var(--accent);
+    box-shadow: var(--shadow);
+}
+.menu-item a:hover {
+    color: var(--main-text);
 }
