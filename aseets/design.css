@@ -94,7 +94,6 @@ header {
     z-index: 30;
     padding-top: 8px;
     padding-bottom: 8px;
-    overflow: hidden;
     backdrop-filter: blur(8px);
 }
 img.siteicon {
@@ -162,4 +161,44 @@ body {
 }
 .menu-item a:hover {
     color: var(--main-text);
+}
+.nav-close,.mobileonly {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    nav.nav {
+        margin: 0;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        background: var(--border-color);
+        top: 0;
+        width: 80vw;
+        padding-top: 10px;
+        backdrop-filter: blur(8px);
+        border-left: var(--window-outline);
+      }
+    .menu-group {
+        display: grid;
+        justify-content: left;
+    }
+    .nav-close {
+        display: block;
+    }
+    .nav-close {
+        background: var(--background-primary);
+        border: var(--border);
+        border-radius: 50%;
+        position: fixed;
+        top: 20px;
+        z-index: 35;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        box-shadow: var(--shadow);
+        display: block;
+    }
+    .nav-close span {
+        display: block;
+    }
 }
