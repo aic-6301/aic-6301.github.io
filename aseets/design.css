@@ -1,3 +1,81 @@
+* {
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-property: color, background-color, display, div, position, span, font-size, text-decoration, box-shadow, border-color, filter, border-radius, background-image, transform, margin, margin-top, margin-bottom, margin-right, margin-left, padding-bottom, outline, opatity;
+    scrollbar-width: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--background-secondary);
+    scrollbar-darkshadow-color: rgb(0 0 0/12%);
+    scroll-padding: 1%;
+    scrollbar-shadow-color: rgb(0 0 0/12%);
+    scroll-behavior: smooth;
+  }
+  :root {
+    --main-text: #272727;
+    --main-text-rgb: 39,39,39;
+    --shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    --hover-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    --background-secondary: #ffe5da;
+    --background-secondary-rgb: 255, 229, 218;
+    --focus: rgba(3, 102, 214, 0.3);
+    --border: 1px solid #a06a5433;
+    --border-color: #a06a5433;
+    --border-color-rgb: 160, 106, 84, 0.2;
+    --background-primary: #F0C8B7;
+    --background-primary-rgb: 240, 200, 183;
+    --input-background: var(--background-primary);
+    --input-background-rgb: var(--background-primary-rgb);
+    --opacity-color: #ADADAD;
+    --opacity-color-rgb: 173,173,173;
+    --nav-focus: var(--background-primary);
+    --nav-focus-rgb: var(--background-primary-rgb);
+    --accent: #A06A54;
+    --accent-rgb: 160,106,84;
+    --modal: #EFEFEF;
+    --modal-rgb: 239,239,239;
+    --site-background: #E6AF9A;
+    --site-background-rgb: 230, 175, 154;
+    --nav-background: #bac9d4;
+    --nav-background-rgb: 250,250,250;
+    --button-background: #FFF;
+    --button-background-rgb: 255,255,255;
+    --nav-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --main-text: #CDCDCD;
+      --main-text-rgb: 205,205,205;
+      --background-secondary: #644538;
+      --background-secondary-rgb: 100, 69, 56;
+      --focus: rgb(100 172 255);
+      --background-primary: #4F3226;
+      --background-primary-rgb: 79, 50, 38;
+      --border: 1px solid #ffffff1a;
+      --border-color: #ffffff1a;
+      --border-color-rgb: 255,255,241;
+      --input-background: var(--border-color);
+      --opacity-color: #E5E5E67D;
+      --nav-focus: var(--background-primary);
+      --nav-focus-rgb: var(--background-primary-rgb);
+      --nav-background: #2F2F2F;
+      --nav-background-rgb: 47,47,47;
+      --modal: #0f0f0f;
+      --modal-rgb: 15, 15, 15;
+      --site-background: #442f26;
+      --site-background-rgb: 68, 47, 38;
+      --button-background: #252525;
+      --button-background-rgb: 37,37,37;
+      --shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;;
+      --hover-background: #ffffff1a;
+      --hover-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+      --nav-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+      --window-outline: 1px solid #000;
+      --window-outline-color: #000;
+   }
+  img {
+    filter: contrast(0.8);
+  }
+  }
 header {
     width: 100%;
     background: #dddd;
@@ -26,7 +104,7 @@ h1.title {
     display: flex;
     height: fit-content;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto !important;
 }
 span.sitetitle {
     display: block;
@@ -40,6 +118,9 @@ span.sitetitle {
 nav.nav {
     margin-left: auto;
     margin-right: 50px;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 body {
     margin: 0;
