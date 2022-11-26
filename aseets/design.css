@@ -162,12 +162,12 @@ body {
 .menu-item a:hover {
     color: var(--main-text);
 }
-.nav-close,.mobileonly {
-    display: none;
+.mobileonly {
+    display:  none !important;;
 }
 @media screen and (max-width: 600px) {
     .mobileonly {
-        display: block;
+        display: block !important;;
     }
     nav.nav {
         margin: 0;
