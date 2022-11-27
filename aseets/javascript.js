@@ -1,4 +1,4 @@
-if ("http" === location.protocol) {
+if ("http:" == location.protocol) {
   location.href = "https://aicy.aic-group.net"+location.pathname;
 }
 if ("aic-6301.github.io" === location.hostname) {
